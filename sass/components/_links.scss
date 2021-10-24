@@ -1,0 +1,8 @@
+.link {
+	color: var(--text-primary-color);
+	transition: color var(--animation-timer) var(--animation-cube);
+	&:focus,
+	&:hover {
+		color: var(--accent-color);
+	}
+}

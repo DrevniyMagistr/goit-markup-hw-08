@@ -1,0 +1,15 @@
+
+.overlay-text {
+  @include font(18px, 28px, 0.03em);
+	color: var(--title-accent-color);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	padding: 63px 24px;
+
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform var(--animation-timer) var(--animation-cube);
+}

@@ -1,0 +1,11 @@
+@mixin flc($type, $ai, $jc) {
+	display: $type;
+	align-items: $ai;
+	justify-content: $jc;
+}
+
+@mixin font($fz, $lh, $ls) {
+	font-size: $fz;
+	line-height: $lh / $fz;
+	letter-spacing: $ls;
+}

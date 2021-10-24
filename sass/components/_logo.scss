@@ -1,0 +1,19 @@
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+  @include font(26px, 31px, 0.03em);
+
+	color: var(--accent-color);
+	&:focus,
+	&:hover {
+		color: var(--accent-color);
+		& .logo_accent {
+			color: var(--accent-color);
+		}
+	}
+}
+
+.logo,
+.logo_accent {
+	transition: color var(--animation-timer) var(--animation-cube);
+}
