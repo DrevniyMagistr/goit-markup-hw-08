@@ -15,14 +15,10 @@
 	&__card {
     &:not(:last-child){margin-bottom: 30px;}
 		@media screen and (min-width: 768px) {
-			flex-basis: calc(100% / 2 - var(--card-gap));
-			margin-left: var(--card-gap);
-			margin-top: var(--card-gap);
+			@include flex-card(2);
 		}
 		@media screen and (min-width: 1200px) {
-      flex-basis: calc(100% / 3 - var(--card-gap));
-			margin-left: var(--card-gap);
-			margin-top: var(--card-gap);
+      @include flex-card(3);
 		}
 	}
 

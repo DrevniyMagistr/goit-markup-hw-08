@@ -11,15 +11,13 @@
 	// .clients__item
 
 	&__item {
-		flex-basis: calc(100% / 2 - var(--card-gap));
-		margin-left: var(--card-gap);
-		margin-top: var(--card-gap);
+		@include flex-card(2);
 
 		@media screen and (min-width: 768px) {
-			flex-basis: calc(100% / 3 - var(--card-gap));
+			@include flexb-card(3);
 		}
 		@media screen and (min-width: 1200px) {
-			flex-basis: calc(100% / 6 - var(--card-gap));
+			@include flexb-card(6);
 		}
 	}
 
@@ -27,7 +25,7 @@
 
 	&__link {
 		display: flex;
-    justify-content: center;
+		justify-content: center;
 		padding: 14px 0;
 		color: #afb1b8;
 		border: 1px solid #afb1b8;

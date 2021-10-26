@@ -11,8 +11,12 @@
 }
 
 
-// @mixin flex-card($nc) {
-// 	flex-basis: calc(100% / ($nc) - var(--card-gap));
-// 	margin-left: var(--card-gap);
-// 	margin-top: var(--card-gap);
-// }
+@mixin flex-card($nc) {
+	flex-basis: calc(100% / #{$nc} - var(--card-gap));
+	margin-left: var(--card-gap);
+	margin-top: var(--card-gap);
+}
+
+@mixin flexb-card($ncb) {
+	flex-basis: calc(100% / #{$ncb} - var(--card-gap));
+}
