@@ -1,5 +1,8 @@
 .service {
 	padding: 0 0 94px;
+  @media screen and (max-width:1199px) {
+    display: none;
+  }
 	// .service__items
 
 	&__items {

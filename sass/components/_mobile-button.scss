@@ -1,0 +1,16 @@
+.header-nav__button {
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: transparent;
+	& .header-nav__icon-cross {
+		display: none;
+	}
+	&.is-open .header-nav__icon-cross {
+		display: block;
+	}
+	&.is-open .header-nav__icon-burger {
+		display: none;
+	}
+}

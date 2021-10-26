@@ -1,12 +1,19 @@
-
 .footer {
 	padding: 60px 0;
 	background-color: var(--footer-bg-color);
 	// .footer__wrapper
 
 	&__wrapper {
-		display: flex;
-		align-items: flex-start;
+      text-align: center;
+		@media screen and (min-width: 768px) {
+			display: flex;
+      justify-content: space-around;
+			align-items: flex-start;
+      flex-wrap: wrap;
+		}
+    @media screen and (min-width:1200px) {
+      text-align-last: left;
+    }
 	}
 
 	// .footer__logo
@@ -24,11 +31,11 @@
 	// .footer__contacts-item
 
 	&__contacts-item {
-    letter-spacing: 0.03em;
-    color: var(--address-text-color);
-    &:nth-child(2n) {
-      margin: 9px 0 6px;
-    }
+		letter-spacing: 0.03em;
+		color: var(--address-text-color);
+		&:nth-child(2n) {
+			margin: 9px 0;
+		}
 	}
 
 	// .footer__map-link
@@ -53,16 +60,15 @@
 }
 
 .footer-social {
-	margin-top: 15px;
-	margin-left: 85px;
+	margin: 60px 0;
+	@media screen and(min-width:1200px) {
+    margin: 15px 0 0 85px;
+	}
 
 	// .footer-social__list
 
 	&__list {
-		// display: flex;
-		// align-items: center;
-    @include flc(flex, center, center);
-
+		@include flc(flex, center, center);
 	}
 
 	// .footer-social__item
@@ -102,20 +108,25 @@
 
 	&__wrapper {
 		margin-top: 15px;
-		margin-left: 93px;
+    @media screen and(min-width:1200px) {
+      margin-left: 93px;
+    }
 	}
 
 	// .footer-form__field
 
 	&__field {
-		position: relative;
-		display: inline-flex;
+		@media screen and (min-width: 1200px) {
+			position: relative;
+			display: inline-flex;
+		}
 	}
 
 	// .footer-form__input
 
 	&__input {
-		width: 355px;
+		width: 100%;
+		margin-bottom: 20px;
 
 		font-size: 16px;
 		line-height: (24 / 16);
@@ -142,6 +153,12 @@
 
 			color: rgba(255, 255, 255, 0.6);
 		}
+		@media screen and (min-width: 768px) {
+			width: 455px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 355px;
+		}
 	}
 
 	// .footer-form__button
@@ -152,7 +169,9 @@
 		padding-left: 28px;
 		padding-right: 62px;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		margin-left: 12px;
+		@media screen and (min-width: 1200px) {
+			margin-left: 12px;
+		}
 	}
 
 	// .footer-form__icon

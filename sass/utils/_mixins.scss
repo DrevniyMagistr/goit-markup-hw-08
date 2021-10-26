@@ -9,3 +9,10 @@
 	line-height: $lh / $fz;
 	letter-spacing: $ls;
 }
+
+
+// @mixin flex-card($nc) {
+// 	flex-basis: calc(100% / ($nc) - var(--card-gap));
+// 	margin-left: var(--card-gap);
+// 	margin-top: var(--card-gap);
+// }
