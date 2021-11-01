@@ -29,7 +29,10 @@
 	}
 }
 .team-inner {
-	padding: 30px 32px;
+	padding: 30px 32px 24px;
+  @media screen and (min-width:1200px) {
+    padding: 30px 32px;
+  }
 	// .team-inner__title
 
 	&__title {

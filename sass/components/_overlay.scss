@@ -6,9 +6,14 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding: 77px 24px;
 
-	padding: 63px 24px;
-
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 	opacity: 0;
 	transform: translateY(100%);
 	transition: transform var(--animation-timer) var(--animation-cube);

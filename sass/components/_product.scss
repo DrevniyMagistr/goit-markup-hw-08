@@ -13,12 +13,18 @@
 	// .product__card
 
 	&__card {
-    &:not(:last-child){margin-bottom: 30px;}
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
 		@media screen and (min-width: 768px) {
 			@include flex-card(2);
 		}
+		@media screen and (min-width: 768px) and (max-width:1199px) {
+			display: flex;
+		}
+
 		@media screen and (min-width: 1200px) {
-      @include flex-card(3);
+			@include flex-card(3);
 		}
 	}
 
@@ -37,6 +43,10 @@
 		&:focus .overlay-text {
 			opacity: 1;
 			transform: translateY(0);
+		}
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+			display: flex;
+      flex-direction: column;
 		}
 	}
 
@@ -62,11 +72,11 @@
 	// .product__content
 
 	&__content {
+    flex-grow: 1;
 		padding: 20px 24px;
 		border: 1px solid #eeeeee;
 		border-top: none;
 	}
-
 	// .product__title
 
 	&__title {

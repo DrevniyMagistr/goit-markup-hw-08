@@ -1,5 +1,11 @@
-%accent-color {
-	color: var(--title-accent-color);
-	background-color: var(--accent-color);
+%dmin {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
+%dmax {
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}

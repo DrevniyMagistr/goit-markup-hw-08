@@ -1,0 +1,15 @@
+.menu-toggle {
+	background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-toggle__burger{
+  margin-left: auto;
+  @extend %dmax;
+}
+
+.mobile-button__icon {
+	width: 24px;
+	height: 16px;
+}

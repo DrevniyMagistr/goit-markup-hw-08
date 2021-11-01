@@ -3,15 +3,18 @@
 	// .header__container
 
 	&__container {
-		@media screen and (min-width: 768px) {
 			display: flex;
 			align-items: center;
+		@media screen and (max-width: 767px) {
 		}
 	}
 
 	// .header__logo
 
 	&__logo {
+    @media screen and (max-width:767px) {
+      padding: 16px 0;
+    }
 		@media screen and (max-width: 1199px) {
 			@include font(24px, 28px, 0.03em);
 		}
@@ -26,8 +29,11 @@
 	// .header__contacts-items
 
 	&__contacts-items {
-		display: flex;
-		margin-left: auto;
+		@extend %dmin;
+		@media screen and (min-width: 768px) {
+			display: flex;
+			margin-left: auto;
+		}
 		@media screen and (min-width: 768px) and(max-width:1199px) {
 			flex-direction: column;
 			padding: 16px 0;
@@ -72,6 +78,7 @@
 }
 
 .header-nav {
+	@extend %dmin;
 	@media screen and (min-width: 768px) {
 		margin-left: 88px;
 	}
