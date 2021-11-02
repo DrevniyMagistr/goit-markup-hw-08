@@ -2,12 +2,23 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
-	width: 528px;
-	height: 581px;
+	width: 450px;
+	height: 609px;
+
 	background-color: var(--primary-bg-color);
 	border-radius: 4px;
+	transform: translate(-50%, -50%) scale(1);
 	transition: transform var(--animation-timer) var(--animation-cube);
+
+	@media screen and (max-width: 479px) {
+		width: 100vw;
+    height: 100%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+		height: 581px;
+	}
 	// .modal__button
 
 	&__button {
@@ -64,7 +75,7 @@
 
 	&__label {
 		display: block;
-    @include font(12px, 14px, 0.01em);
+		@include font(12px, 14px, 0.01em);
 
 		color: var(--text-primary-color);
 		margin-bottom: 4px;
@@ -130,8 +141,7 @@
 	// .modal-form__button
 
 	&__button {
-
-	margin: 0 auto;
+		margin: 0 auto;
 
 		margin-top: 30px;
 		padding-right: 52px;
@@ -158,21 +168,34 @@
 	// .checkbox__description
 
 	&__description {
-		@include flc(flex, center, center);
+		@media screen and (max-width: 479px) {
+			display: inherit;
+		}
+		@include font(12px, 14px, 0.03em);
+		@include flc(flex, center, space-between);
 	}
 
 	// .checkbox__wrapper
 
 	&__wrapper {
+		@media screen and (max-width: 479px) {
+			display: inline-flex;
+		}
 		@include flc(flex, center, center);
 		width: 16px;
 		height: 15px;
 		border: 1px solid var(--title-primary-color);
 		border-radius: 2px;
-		margin-right: 7px;
+		margin-right: 8px;
 		fill: transparent;
 		transition: background-color var(--animation-timer) var(--animation-cube),
 			fill var(--animation-timer) var(--animation-cube),
 			border var(--animation-timer) var(--animation-cube);
 	}
+	@media screen and (min-width: 1200px) {
+		@include font(14px, 24px, 0.03em);
+	}
+}
+.overflow-y {
+	overflow: hidden;
 }
