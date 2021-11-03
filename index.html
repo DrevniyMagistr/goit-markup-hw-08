@@ -166,13 +166,25 @@
 						<li class="service__item">
 							<a href="" class="service__link link">
 								<div class="service__thumb">
-									<img
-										class="service__img"
-										src="./images/home/about/about-img1.jpg"
-										width="370"
-										height="294"
-										alt="рабочий стол с компьютером"
-									/>
+                  <picture>
+										<source
+											srcset="
+												./images/desktop/home/about/webP/desktop-about-1.webp 1x,
+												./images/desktop/home/about/webP/2x/desktop-about-1-2x.webp 2x
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+										/>
+										<source
+											srcset="./images/desktop/home/about/desktop-about-1.jpg 1x, /images/desktop/home/about/2x/desktop-about-1-2x.jpg 2x"
+											media="(min-width: 1200px)"
+										/>
+										<img
+											class="service__img"
+											src="./images/desktop/home/about/desktop-about-1.jpg"
+											alt="рабочий стол с компьютером"
+										/>
+									</picture>
 									<div class="service__description">Десктопные приложения</div>
 								</div>
 							</a>
@@ -180,13 +192,26 @@
 						<li class="service__item">
 							<a href="" class="service__link link">
 								<div class="service__thumb">
-									<img
-										class="service__img"
-										src="./images/home/about/about-img2.jpg"
-										width="370"
-										height="294"
-										alt="рабочий стол с ноутбуком"
-									/>
+									<picture>
+										<source
+											srcset="
+												./images/desktop/home/about/webP/desktop-about-2.webp 1x,
+												./images/desktop/home/about/webP/2x/desktop-about-2-2x.webp 2x
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+										/>
+										<source
+											srcset="./images/desktop/home/about/desktop-about-2.jpg 1x, /images/desktop/home/about/2x/desktop-about-2-2x.jpg 2x"
+											media="(min-width: 1200px)"
+										/>
+										<img
+											class="service__img"
+											src="./images/desktop/home/about/desktop-about-2.jpg"
+											alt="рабочий стол с ноутбуком"
+										/>
+									</picture>
+							
 									<div class="service__description">Мобильные приложения</div>
 								</div>
 							</a>
@@ -194,13 +219,28 @@
 						<li class="service__item">
 							<a href="" class="service__link link">
 								<div class="service__thumb">
-									<img
-										class="service__img"
-										src="./images/home/about/about-img3.jpg"
-										width="370"
-										height="294"
-										alt="планшет"
-									/>
+									<picture>
+										<source
+											srcset="
+												./images/desktop/home/about/webP/desktop-about-3.webp       1x,
+												./images/desktop/home/about/webP/2x/desktop-about-3-2x.webp 2x
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+										/>
+										<source
+											srcset="
+												./images/desktop/home/about/desktop-about-3.jpg       1x,
+												./images/desktop/home/about/2x/desktop-about-3-2x.jpg 2x
+											"
+											media="(min-width: 1200px)"
+										/>
+										<img
+											class="service__img"
+											src="./images/desktop/home/about/desktop-about-3.jpg"
+											alt="планшет"
+										/>
+									</picture>
 									<div class="service__description">Дизайнерские решения</div>
 								</div>
 							</a>
@@ -215,11 +255,58 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team__items list">
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/mobile/home/team/mobile-avatar-img4.jpg"
-								alt="улыбающийся мужчина, с бородой, в темной рубашке и очках"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/mobile/home/team/webP/mobile-avatar-img4.webp       1x,
+										./images/mobile/home/team/webP/2x/mobile-avatar-img4-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/webP/tablet-avatar-img4.webp       1x,
+										./images/tablet/home/team/webP/2x/tablet-avatar-img4-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/webP/desktop-avatar-img4.webp       1x,
+										./images/desktop/home/team/webP/2x/desktop-avatar-img4-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										./images/mobile/home/team/mobile-avatar-img4.jpg       1x,
+										./images/mobile/home/team/2x/mobile-avatar-img4-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/tablet-avatar-img4.jpg       1x,
+										./images/tablet/home/team/2x/tablet-avatar-img4-2x.jpg 2x
+									"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/desktop-avatar-img4.jpg       1x,
+										./images/desktop/home/team/2x/desktop-avatar-img4-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<img
+									class="team__img"
+									src="./images/mobile/home/team/mobile-avatar-img4.jpg"
+									alt="улыбающийся мужчина, с бородой, в темной рубашке и очках"
+								/>
+							</picture>
 
 							<div class="team-inner">
 								<h3 class="team-inner__title">Игорь Демьяненко</h3>
@@ -267,11 +354,58 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/mobile/home/team/mobile-avatar-img1.jpg"
-								alt="улыбающаяся девушка, в пиджаке и очках"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/mobile/home/team/webP/mobile-avatar-img1.webp       1x,
+										./images/mobile/home/team/webP/2x/mobile-avatar-img1-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/webP/tablet-avatar-img1.webp       1x,
+										./images/tablet/home/team/webP/2x/tablet-avatar-img1-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/webP/desktop-avatar-img1.webp       1x,
+										./images/desktop/home/team/webP/2x/desktop-avatar-img1-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										./images/mobile/home/team/mobile-avatar-img1.jpg       1x,
+										./images/mobile/home/team/2x/mobile-avatar-img1-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/tablet-avatar-img1.jpg       1x,
+										./images/tablet/home/team/2x/tablet-avatar-img1-2x.jpg 2x
+									"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/desktop-avatar-img1.jpg       1x,
+										./images/desktop/home/team/2x/desktop-avatar-img1-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<img
+									class="team__img"
+									src="./images/mobile/home/team/mobile-avatar-img1.jpg"
+									alt="улыбающаяся девушка, в пиджаке и очках"
+								/>
+							</picture>
 
 							<div class="team-inner">
 								<h3 class="team-inner__title">Ольга Репина</h3>
@@ -319,11 +453,58 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/mobile/home/team/mobile-avatar-img2.jpg"
-								alt="улыбающийся мужчина, с небольшой бородой, в светлой рубашке"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/mobile/home/team/webP/mobile-avatar-img2.webp       1x,
+										./images/mobile/home/team/webP/2x/mobile-avatar-img2-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/webP/tablet-avatar-img2.webp       1x,
+										./images/tablet/home/team/webP/2x/tablet-avatar-img2-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/webP/desktop-avatar-img2.webp       1x,
+										./images/desktop/home/team/webP/2x/desktop-avatar-img2-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										./images/mobile/home/team/mobile-avatar-img2.jpg       1x,
+										./images/mobile/home/team/2x/mobile-avatar-img2-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/tablet-avatar-img2.jpg       1x,
+										./images/tablet/home/team/2x/tablet-avatar-img2-2x.jpg 2x
+									"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/desktop-avatar-img2.jpg       1x,
+										./images/desktop/home/team/2x/desktop-avatar-img2-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<img
+									class="team__img"
+									src="./images/mobile/home/team/mobile-avatar-img2.jpg"
+									alt="улыбающийся мужчина, с небольшой бородой, в светлой рубашке"
+								/>
+							</picture>
 
 							<div class="team-inner">
 								<h3 class="team-inner__title">Николай Тарасов</h3>
@@ -369,11 +550,58 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								class="team__img"
-								src="./images/mobile/home/team/mobile-avatar-img3.jpg"
-								alt="мужчина с бородой, с прищуренным взглядом и ухмылкой"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/mobile/home/team/webP/mobile-avatar-img3.webp       1x,
+										./images/mobile/home/team/webP/2x/mobile-avatar-img3-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/webP/tablet-avatar-img3.webp       1x,
+										./images/tablet/home/team/webP/2x/tablet-avatar-img3-2x.webp 2x
+									"
+									type="image/webp"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/webP/desktop-avatar-img3.webp       1x,
+										./images/desktop/home/team/webP/2x/desktop-avatar-img3-2x.webp 2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										./images/mobile/home/team/mobile-avatar-img3.jpg       1x,
+										./images/mobile/home/team/2x/mobile-avatar-img3-2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="
+										./images/tablet/home/team/tablet-avatar-img3.jpg       1x,
+										./images/tablet/home/team/2x/tablet-avatar-img3-2x.jpg 2x
+									"
+									media="(max-width: 1199px)"
+								/>
+								<source
+									srcset="
+										./images/desktop/home/team/desktop-avatar-img3.jpg       1x,
+										./images/desktop/home/team/2x/desktop-avatar-img3-2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<img
+									class="team__img"
+									src="./images/mobile/home/team/mobile-avatar-img3.jpg"
+									alt="мужчина с бородой, с прищуренным взглядом и ухмылкой"
+								/>
+							</picture>
 
 							<div class="team-inner">
 								<h3 class="team-inner__title">Михаил Ермаков</h3>
