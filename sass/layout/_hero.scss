@@ -1,18 +1,18 @@
 .hero {
-	height: 600px;
+	height: auto;
 	margin: 0 auto;
-	padding: 200px 0;
+	padding: 118px 0;
 	text-align: center;
 
 	background-color: #c4c4c4;
 	@include bg-im(url(../images/mobile/home/bg/webP/bg-mobile.webp));
-  
+
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
 		@include bg-im(url(../images/mobile/home/bg/webP/2x/bg-mobile-2x.webp));
 	}
-  
+
 	@media screen and (min-width: 768px) {
 		@include bg-im(url(../images/tablet/home/bg/webP/bg-tablet.webp));
 		@media (min-device-pixel-ratio: 2),
@@ -24,6 +24,7 @@
 
 	@media screen and (min-width: 1200px) {
 		max-width: 1600px;
+		padding: 200px 0;
 		@include bg-im(url(../images/desktop/home/bg/webP/bg-desktop.webp));
 		@media (min-device-pixel-ratio: 2),
 			(min-resolution: 192dpi),

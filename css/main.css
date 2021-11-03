@@ -758,9 +758,9 @@ body {
 }
 
 .hero {
-  height: 600px;
+  height: auto;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: #c4c4c4;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/home/bg/webP/bg-mobile.webp);
@@ -799,6 +799,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding: 200px 0;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/home/bg/webP/bg-desktop.webp);
     background-position: center;
     background-repeat: no-repeat;
