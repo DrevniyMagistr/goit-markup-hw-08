@@ -78,6 +78,8 @@
 
 		padding: 12px;
 
+    color: var(--svg-icon-color);
+
 		transition: background-color var(--animation-timer) var(--animation-cube),
 			color var(--animation-timer) var(--animation-cube),
 			border-radius var(--animation-timer) var(--animation-cube);

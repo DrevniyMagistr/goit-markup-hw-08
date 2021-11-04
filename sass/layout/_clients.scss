@@ -27,8 +27,8 @@
 		display: flex;
 		justify-content: center;
 		padding: 14px 0;
-		color: #afb1b8;
-		border: 1px solid #afb1b8;
+		color: var(--svg-icon-color);
+		border: 1px solid var(--svg-icon-color);
 		border-radius: 4px;
 		transition: color var(--animation-timer) var(--animation-cube),
 			border-color var(--animation-timer) var(--animation-cube);
