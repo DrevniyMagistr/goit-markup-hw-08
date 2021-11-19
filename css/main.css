@@ -773,7 +773,7 @@ body {
   padding: 118px 0;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/home/bg/webP/bg-mobile.webp);
+  background-image: url(../images/mobile/home/bg/webP/bg-mobile.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -781,7 +781,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/home/bg/webP/2x/bg-mobile-2x.webp);
+    background-image: url(../images/mobile/home/bg/webP/2x/bg-mobile-2x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -790,7 +790,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/home/bg/webP/bg-tablet.webp);
+    background-image: url(../images/tablet/home/bg/webP/bg-tablet.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -799,7 +799,7 @@ body {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/home/bg/webP/2x/bg-tablet-2x.webp);
+    background-image: url(../images/tablet/home/bg/webP/2x/bg-tablet-2x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -810,7 +810,7 @@ body {
   .hero {
     max-width: 1600px;
     padding: 200px 0;
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/home/bg/webP/bg-desktop.webp);
+    background-image: url(../images/desktop/home/bg/webP/bg-desktop.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -819,7 +819,7 @@ body {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/home/bg/webP/2x/bg-desktop-2x.webp);
+    background-image: url(../images/desktop/home/bg/webP/2x/bg-desktop-2x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
